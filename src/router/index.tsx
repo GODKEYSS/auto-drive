@@ -11,6 +11,7 @@ import ForgotPassword from "../pages/forgotpassword/ForgotPassword";
 import PasswordToken from "../pages/forgotpassword/PasswordToken";
 import ResetPassword from "../pages/forgotpassword/ResetPassword";
 import Listings from "../pages/listCar/Listings";
+import AdminDashboard from "../pages/admin/admin";
 const router = createBrowserRouter([{
     element: <AuthLayout />, children: [{
         element: <Login />, path: '/login'
@@ -39,6 +40,9 @@ const router = createBrowserRouter([{
     },
 
     ]
-}]);
+}, {
+    path: "/admin",
+    element: <AdminDashboard />,
+},]);
 
 export default router;

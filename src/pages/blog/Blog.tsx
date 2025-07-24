@@ -1,4 +1,4 @@
-import { Breadcrumb, Pagination } from 'antd';
+import { Breadcrumb, Input, Pagination } from 'antd';
 import React from 'react';
 import { Link } from 'react-router';
 import CarsImg from "../../assets/images/Cars.png";
@@ -101,40 +101,9 @@ export default function Blog() {
           <div className="container mx-auto text-center">
             <span className="text-white  text-[16px]">Find car for sale and for rent near you</span>
             <h1 className="text-6xl font-semibold text-white mb-[60px] mt-8">Find Your Perfect Car</h1>
-            <div className="flex justify-center max-w-3xl mx-auto rounded-xl p-4 gap-3 flex-wrap">
-              <select className="flex-1 min-w-[120px] bg-gray-600 text-white text-base md:text-lg py-3 px-4 rounded-lg transition-all duration-300 hover:bg-gray-600"
-                value={selectedType}
-                onChange={(e) => setSelectedType(e.target.value)}
-              >
-                <option>All Type</option>
-                <option>New</option>
-                <option>Used</option>
-              </select>
-              <select className="flex-1 min-w-[120px] bg-gray-600 text-white text-base md:text-lg py-3 px-4 rounded-lg transition-all duration-300 hover:bg-gray-600"
-                value={selectedCatetory}
-                onChange={(e) => setSelectedCatetory(e.target.value)}
-              >
-                <option>All Type</option>
-                <option>SUV</option>
-                <option>Sedan</option>
-                <option>Hatchback</option>
-                <option>Coupe</option>
-                <option>Hybrid</option>
-              </select>
-              <select className="flex-1 min-w-[120px] bg-gray-600 text-white text-base md:text-lg py-3 px-4 rounded-lg transition-all duration-300 hover:bg-gray-600"
-                value={selectedPrice}
-                onChange={(e) => setSelectedPrice(e.target.value)}
-              >
-                <option>All price</option>
-                <option>From low to high price</option>
-                <option>From high to low price</option>
-              </select>
-              <button
-                className="flex-1 min-w-[100px] bg-gradient-to-r from-blue-500 to-blue-700 text-white text-base md:text-lg font-semibold py-3 px-6 rounded-xl shadow-lg hover:from-blue-600 hover:to-blue-800 hover:shadow-xl transition-all  ease-in-out "
-              >
-                Search
-              </button>
-            </div>
+            <Input placeholder="Find your favourite car" size="large" style={{ width: 900, height: 50, borderRadius: 99, marginBottom: 65 }} />;
+             
+            
           </div>
 
 
